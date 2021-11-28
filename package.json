@@ -1,0 +1,52 @@
+{
+  "name": "nestjs-mailer",
+  "version": "0.0.1",
+  "description": "",
+  "author": "im-parsa",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "nest build",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "start:debug": "nest start --debug --watch",
+    "start:prod": "node dist/main",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "test:e2e": "jest --config ./test/jest-e2e.json"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "@nestjs/cli": "^8.1.5",
+    "@nestjs/platform-express": "^8.2.3",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.13.2",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "nestjs-real-ip": "^2.0.0",
+    "nodemailer": "^6.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.10"
+  }
+}

@@ -1,0 +1,9 @@
+POST http://localhost:3435/send
+content-type: application/json
+
+{
+  "from": "parsa.firoozi20@gmail.com",
+  "to": "parsa.firoozi55@gmail.com",
+  "text": "text V",
+  "subject": "subject T"
+}
