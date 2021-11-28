@@ -1,7 +1,7 @@
 {
   "name": "nestjs-mailer",
   "version": "0.0.1",
-  "description": "",
+  "description": "A simple NestJs mailer-client built with nest.js & as well as the use of Express & Typescript",
   "author": "im-parsa",
   "license": "MIT",
   "scripts": {
